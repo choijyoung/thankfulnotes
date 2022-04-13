@@ -229,10 +229,10 @@ a:hover {
     display: grid;
     grid-template-areas: 
     "img3 img3 . ."
-    "img3 img3 . ."
     "img3 img3 p3 p3"
     "img3 img3 cdiv1 cdiv1"
     "img3 img3 cdiv2 cdiv2"
+    "img3 img3 . ."
     "img3 img3 . ."
     "img3 img3 cdiv3 cdiv3";
 }
