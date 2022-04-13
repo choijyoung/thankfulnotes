@@ -1,25 +1,27 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
 .nav {
     background: white;
-    opacity: 0.9;
+    opacity: 0.8;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
     padding: 15px;
+    margin: 5px;
 }
 
 .nav-text {
     display: flex;
     justify-content: space-between;
-    margin: 15px;
     
 }
 
 .nav-link {
     display: flex;
     flex-direction: row;
-    margin: 5px
+    margin: 5px;
 }
 
 
@@ -58,3 +60,104 @@ a {
 a:hover {
     color: grey;
 }
+
+.update-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.delete-button {
+    border-radius: 5px;
+    margin:3px;
+    padding: 5px;
+    width: 49px;
+    background-color: white;
+}
+
+.postcard {
+    background: white;
+    padding: 10px;
+}
+
+.create-form {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.text-box {
+    width: 300px;
+    height: 100px;
+}
+
+.about-card {
+    background-color: white;
+    height: 25vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-grid {
+    display: grid;
+    grid-template-areas: 
+    "img img . ."
+    "img img p p"
+    "img img div1 div1"
+    "img img div2 div2"
+    "img img . ."
+    "img img div3 div3"
+    "img img div4 div4"
+    "img img . .";
+
+    background-color: white;
+}
+
+.gridone {
+    grid-area: img;
+}
+
+.loginform1 {
+    grid-area: div1;
+    margin: 10px;
+}
+.loginform2 {
+    grid-area: div2;
+    margin:10px;
+}
+.loginform3 {
+    grid-area: div3;
+}
+.loginform4 {
+    grid-area: div4;
+}
+
+.logintext{
+    grid-area: p;
+    font-size: 40px;
+}
+
+.emailbox {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.passwordbox {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.loginsubmitbox {
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+    color:white;
+    background-color: black;
+}
+

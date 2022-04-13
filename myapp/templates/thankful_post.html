@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
+<div class="postcard">
   <h1>{{ post.title }}</h1>
   <h4>By: {{post.author.username}} - Posted: {{ post.date.strftime('%B %d, %Y') }}</h4>
   <br>
@@ -8,10 +8,9 @@
   <br>
    {% if post.author == current_user %}
      <div>
-       <a class="btn btn-secondary" href="{{ url_for('thankful_posts.update', thankful_post_id=post.id) }}">Update</a>
-       <br>
+       <a class="update-button" href="{{ url_for('thankful_posts.update', thankful_post_id=post.id) }}">Update</a>
        <form action="{{ url_for('thankful_posts.delete_post', thankful_post_id=post.id) }}" method="POST">
-        <input class="btn btn-danger" type="submit" value="Delete">
+        <input class="delete-button" type="submit" value="Delete">
       </form>
      </div>
    {% endif %}
