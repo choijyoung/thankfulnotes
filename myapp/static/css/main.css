@@ -84,18 +84,6 @@ a:hover {
     padding: 10px;
 }
 
-.create-form {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    height: 50vh;
-}
-
-.text-box {
-    width: 300px;
-    height: 100px;
-}
-
 .about-card {
     background-color: white;
     height: 25vh;
@@ -166,12 +154,14 @@ a:hover {
     grid-template-areas: 
     "img2 img2 . ."
     "img2 img2 regp regp"
-    
+    "img2 img2 . ."
     "img2 img2 regdiv1 regdiv1"
     "img2 img2 regdiv2 regdiv2"
     "img2 img2 regdiv3 regdiv3"
     "img2 img2 regdiv4 regdiv4"
+    "img2 img2 . ."
     "img2 img2 regdiv5 regdiv5"
+    "img2 img2 regdiv6 regdiv6"
     "img2 img2 . .";
 
     background-color: white;
@@ -201,6 +191,9 @@ a:hover {
 .registerform5 {
     grid-area: regdiv5
 }
+.registerform6 {
+    grid-area: regdiv6
+}
 
 .emailformreg {
     border-radius: 10px;
@@ -224,6 +217,52 @@ a:hover {
 }
 
 .regbutton {
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+    color:white;
+    background-color: black;
+}
+
+.create-form {
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    "img3 img3 . ."
+    "img3 img3 . ."
+    "img3 img3 p3 p3"
+    "img3 img3 cdiv1 cdiv1"
+    "img3 img3 cdiv2 cdiv2"
+    "img3 img3 . ."
+    "img3 img3 cdiv3 cdiv3";
+}
+
+.createpic {
+    grid-area: img3;
+}
+.createposttext {
+    grid-area: p3;
+    font-size: 40px;
+}
+.createpostform1 {
+    grid-area: cdiv1;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.createpostform2 {
+    grid-area: cdiv2;
+    font-size: 20px;
+}
+.createpostform3 {
+    gridarea: cdiv3;
+}
+
+.text-box {
+    width: 500px;
+    height: 100px;
+}
+
+.createpostbutton {
     border-radius: 10px;
     width: 300px;
     padding: 5px;

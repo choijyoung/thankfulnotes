@@ -1,25 +1,25 @@
-{% extends "base.html" %}
-{% block content %}
-    <div class="create-form">
-      <form class="form-group" method="POST">
-          {{form.hidden_tag()}}
-          <h1>Tell us what you're thankful about!</h1>
-          <br>
-          <div class="form-group">
-              Title:
-              <br>
-              {{form.title(class="form-control form-control-lg")}}
-          </div>
-          <br>
-          <div class="form-group">
-            Today I'm thankful about...
-            <br>
-            {{form.text(class="text-box")}}
-        </div>
-        <br>
-        <div class="form-group">
-            {{form.submit(class="btn btn-outline-info")}}
-        </div>
-      </form>
-    </div>
+{% extends "base.html" %} {% block content %}
+<form class="create-form" method="POST">
+  {{form.hidden_tag()}}
+  <img
+    src="https://cutewallpaper.org/24/thinking-png/girl-thinking-clipart-transparent-background-transparent-cartoon-thinking-woman-png-png-download-kindpng.png"
+    class="createpic"
+    width="600"
+    height="600"
+  />
+  <p class="createposttext">Tell us what you're thankful about!</p>
+  <br />
+  <div class="createpostform1">
+    Title:
+    <br />
+    {{form.title()}}
+  </div>
+  <br />
+  <div class="createpostform2">
+    Today I'm thankful about...
+    <br />
+    {{form.text(class="text-box")}}
+  </div>
+  <div class="createpostform3">{{form.submit(class="createpostbutton")}}</div>
+</form>
 {% endblock %}
