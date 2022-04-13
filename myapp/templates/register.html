@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
    
-<form method="POST">
+<form method="POST" class="register-grid">
     {{form.hidden_tag()}}
-    {{form.email.label}}{{form.email}}<br>
-    {{form.username.label}}{{form.username}}<br>
-    {{form.password.label}}{{form.password}}<br>
-    {{form.pass_confirm.label}}{{form.pass_confirm}}<br>
-    {{form.submit()}}
+    <img src="https://www.kindpng.com/picc/m/42-423892_happy-person-clip-art-portfolio-categories-1designshop-happy.png" class="gridtwo">
+    <p class="registertext">Welome to Thankful Notes! <br> Sign up below :)</p>
+    <div class="registerform1">{{form.email.label}}: <br> {{form.email(class="emailformreg")}}</div>
+    <br>
+    <div class="registerform2">{{form.username.label}}: <br> {{form.username(class="userformreg")}}</div>
+    <br>
+    <div class="registerform3">{{form.password.label}}: <br> {{form.password(class="pwformreg")}}</div>
+    <br>
+    <div class="registerform4">{{form.pass_confirm.label}}: <br> {{form.pass_confirm(class="pwcformreg")}}</div>
+    <br>
+    <div class="registerform5">{{form.submit(class="regbutton")}}</div>
 </form>
 {% endblock %}

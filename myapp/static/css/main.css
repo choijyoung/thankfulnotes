@@ -161,3 +161,72 @@ a:hover {
     background-color: black;
 }
 
+.register-grid {
+    display: grid;
+    grid-template-areas: 
+    "img2 img2 . ."
+    "img2 img2 regp regp"
+    
+    "img2 img2 regdiv1 regdiv1"
+    "img2 img2 regdiv2 regdiv2"
+    "img2 img2 regdiv3 regdiv3"
+    "img2 img2 regdiv4 regdiv4"
+    "img2 img2 regdiv5 regdiv5"
+    "img2 img2 . .";
+
+    background-color: white;
+}
+
+.gridtwo {
+    grid-area: img2
+}
+
+.registertext {
+    grid-area: regp;
+    font-size: 40px;
+}
+
+.registerform1 {
+    grid-area: regdiv1
+}
+.registerform2 {
+    grid-area: regdiv2
+}
+.registerform3 {
+    grid-area: regdiv3
+}
+.registerform4 {
+    grid-area: regdiv4
+}
+.registerform5 {
+    grid-area: regdiv5
+}
+
+.emailformreg {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.userformreg {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.pwformreg {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.pwcformreg {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.regbutton {
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+    color:white;
+    background-color: black;
+}
