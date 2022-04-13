@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="postcard">
-  <h1>{{ post.title }}</h1>
-  <h4>By: {{post.author.username}} - Posted: {{ post.date.strftime('%B %d, %Y') }}</h4>
-  <br>
-  <h4>{{post.text}}</h4>
-  <br>
+  <h1 class="pctitle">{{ post.title }} <p class="infotext">By: {{post.author.username}} - Posted: {{ post.date.strftime('%B %d, %Y') }}</p></h1>
+  <h4 class="pctext">{{post.text}}</h4>
    {% if post.author == current_user %}
      <div>
        <a class="update-button" href="{{ url_for('thankful_posts.update', thankful_post_id=post.id) }}">Update</a>

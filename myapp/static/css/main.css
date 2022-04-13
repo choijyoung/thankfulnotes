@@ -61,37 +61,6 @@ a:hover {
     color: grey;
 }
 
-.update-button {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 3px;
-    padding: 5px;
-    background-color: white;
-    color: black;
-    font-size: 15px;
-}
-
-.delete-button {
-    border-radius: 5px;
-    margin:3px;
-    padding: 5px;
-    width: 49px;
-    background-color: white;
-}
-
-.postcard {
-    background: white;
-    padding: 10px;
-}
-
-.about-card {
-    background-color: white;
-    height: 25vh;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
 .login-grid {
     display: grid;
     grid-template-areas: 
@@ -268,4 +237,72 @@ a:hover {
     padding: 5px;
     color:white;
     background-color: black;
+}
+
+.about-card {
+    background-color: white;
+    height: 60vh;
+    display: grid;
+    grid-template-areas: 
+    ". . img"
+    "title . ."
+    "text . .";
+}
+
+.aboutpic {
+    grid-area: img;
+}
+
+.cardtitle {
+    grid-area: title;
+}
+
+.cardtext {
+    grid-area: text;
+}
+
+.postcard {
+    background: white;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    ". title . ."
+    ". text . ."
+    ". . . ."
+    ". update delete .";
+}
+
+.pctitle {
+    grid-area: title;
+    font-size: 25px;
+}
+
+.infotext {
+    font-size: 15px;
+}
+
+.pctext {
+    grid-area: text;
+}
+
+.update-button {
+    grid-area: update;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+}
+
+.delete-button {
+    grid-area: delete;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:10px;
+    padding: 10px;
+    width: 63px;
+    background-color: palevioletred;
 }
