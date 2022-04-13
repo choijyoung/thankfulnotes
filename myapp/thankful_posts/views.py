@@ -51,7 +51,6 @@ def update(thankful_post_id):
 @thankful_posts.route('/<int:thankful_post_id>/delete',methods=['GET','POST'])
 @login_required
 def delete_post(thankful_post_id):
-
     thankful_post = ThankfulPost.query.get_or_404(thankful_post_id)
     if thankful_post.author != current_user:
         abort(403)

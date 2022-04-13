@@ -13,12 +13,11 @@ def load_user(user_id):
 
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
-
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(64), unique=True, index=True)
     username = db.Column(db.String(64), unique=True, index=True)
     password_hash = db.Column(db.String(128))
-    posts = db.relationship('BlogPost', backref='author', lazy=True)
+    posts = db.relationship('ThankfulPost', backref='author', lazy=True)
 
     def __init__(self, email, username, password):
         self.email = email
@@ -31,7 +30,7 @@ class User(db.Model, UserMixin):
     
     def __repr__(self):
         return f"Username {self.username}"
-
+    
 class ThankfulPost(db.Model):
     __tablename__ = 'thankful_posts'
     id = db.Column(db.Integer, primary_key=True)
@@ -42,8 +41,9 @@ class ThankfulPost(db.Model):
 
 
     def __init__(self, title, text, user_id):
+        self.title = title
         self.text = text
         self.user_id = user_id
     
     def __repr__(self):
-        return f"Post ID: {self.id} -- Date: {self.date}"
+        return f"Post ID: {self.id} -- Date: {self.date} --- Title: {self.Title}"

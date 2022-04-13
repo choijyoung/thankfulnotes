@@ -1,7 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="jumbotron">
-        <h1>Party!</h1>
+        <h1 class="index-title">What are you Thankful for?</h1>
     </div>
-   
+    <div class="container">
+        {% for post in thankful_posts.items %}
+            <div class="card">
+                <div class="car-boy">
+                    <h2>
+                        <a class="card-title" href="{{url_for('thankful_posts.thankful_post', thankful_post_id=post.id)}}">{{post.title}}</a>
+                    </h2>
+                    <p>By: {{post.author.username}} - Posted on: {{post.date.strftime('%Y - %m - %d')}}</p>
+                    <p>{{post.text}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <nav aria-label="Page Navigation example">
+        <ul class="pagination justify-content-center">
+            {% for page_num in thankful_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+                {% if thankful_posts.page == page_num %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 {% endblock %}

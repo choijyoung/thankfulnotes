@@ -40,7 +40,6 @@ login_manager.login_view = 'users.login'
 
 
 # Registering Blueprints - 
-
 from myapp.core.views import core 
 app.register_blueprint(core)
 
@@ -52,3 +51,7 @@ app.register_blueprint(error_pages)
 #linking users views Blueprint
 from myapp.users.views import users
 app.register_blueprint(users)
+
+# Linking and registering thankful_posts views Blueprint
+from myapp.thankful_posts.views import thankful_posts
+app.register_blueprint(thankful_posts)
