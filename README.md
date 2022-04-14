@@ -1,4 +1,4 @@
-# Thankful 
+# Thankful 🙏
 ## Introduction
 In life, people consistently find things to complain about. But how often do people sit down and think about what they are thankful for? That is the inspiration for this application. I wanted to create a place where people can share their thoughts about what they were thankful for today.
 
@@ -10,7 +10,9 @@ Click to enter the website! [here](https://thankfulnotes.herokuapp.com/)
 ***
 ## Technologies used
 ![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+
 ![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
 ![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 
