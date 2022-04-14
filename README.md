@@ -19,7 +19,9 @@ Click to enter the website! [here](https://thankfulnotes.herokuapp.com/)
 [Favicon.io](https://favicon.io/) - Favicon website
 
 [kindpng.com](https://www.kindpng.com/picc/m/42-424866_happy-businessman-hands-raised-up-happy-man-cartoon.png) - Pictures
+
 [kindpng.com](https://www.kindpng.com/imgv/TJRwRww_free-happy-man-png-can-stock-transparent-png/) - Pictures
+
 [cutewallpaper.com](https://cutewallpaper.org/24/thinking-png/girl-thinking-clipart-transparent-background-transparent-cartoon-thinking-woman-png-png-download-kindpng.png) - Pictures
 
 
